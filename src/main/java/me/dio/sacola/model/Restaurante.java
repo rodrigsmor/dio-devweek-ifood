@@ -20,6 +20,8 @@ public class Restaurante {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String nome;
+
     @OneToMany(cascade = CascadeType.ALL)
     private List<Produto> cardapio;
 
